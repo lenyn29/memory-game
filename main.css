@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    
+}
+.container{
+    background: rgb(85, 83, 83);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1{
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px;
+}
+.memory-game{
+    background: #000;
+    padding: 20px;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    perspective: 1000px;
+}
+.memory-card{
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    position: relative;
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    transform: scale(1);
+}
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+.memory-card:active{
+    transform: scale(0);
+    transition: transform 1s;
+}
+.face-back, .face-front{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+.face-back{
+    transform: rotateY(180deg);
+}
+.face-front{
+
+    background: linear-gradient(#333 10%, #777 105%);
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: rgb(30, 190, 30);
+}
+.blue{
+    background: blue;
+}
+.orange{
+    background: rgb(255, 115, 0);
+}
+.purple{
+    background: rgb(218, 47, 218);
+}
+.red2{
+    padding-top: 50px;
+    background: rgba(255, 255, 255, 0.589);
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+.yellow2{
+    padding-top: 50px;
+    background: rgba(255, 255, 255, 0.589);
+    font-size: 40px;
+    text-align: center;
+    color: yellow;
+}
+.green2{
+    padding-top: 50px;
+    background: rgba(255, 255, 255, 0.589);
+    font-size: 50px;
+    text-align: center;
+    color: rgb(30, 190, 30);
+}
+.blue2{
+    padding-top: 50px;
+    background: rgba(255, 255, 255, 0.589);
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+}
+.orange2{
+    padding-top: 50px;
+    background: rgba(255, 255, 255, 0.589);
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 115, 0);
+}
+.purple2{
+    padding-top: 50px;
+    background: rgba(255, 255, 255, 0.589);
+    font-size: 40px;
+    text-align: center;
+    color: rgb(218, 47, 218);
+}
