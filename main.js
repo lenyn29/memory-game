@@ -9,6 +9,7 @@ function flipCard () {
     if (this === firstCard) return;
 
     this.classList.add('flip');
+    
 
     if (!hasFlippedCard) {
         hasFlippedCard = true;
@@ -25,7 +26,6 @@ function checkForMatch() {
     let isMatch = firstCard.dataset.color === secondCard.dataset.color
 
     isMatch ? disableCard() : unflipCard();
-
 }
 
 function disableCard() {
@@ -56,3 +56,6 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+function reset(){
+    }

@@ -84,43 +84,77 @@ body{
 }
 .red2{
     padding-top: 50px;
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.600);
     font-size: 50px;
     text-align: center;
     color: red;
 }
 .yellow2{
     padding-top: 50px;
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.600);
     font-size: 40px;
     text-align: center;
     color: yellow;
 }
 .green2{
     padding-top: 50px;
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.600);
     font-size: 50px;
     text-align: center;
     color: rgb(30, 190, 30);
 }
 .blue2{
     padding-top: 50px;
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.600);
     font-size: 50px;
     text-align: center;
     color: blue;
 }
 .orange2{
     padding-top: 50px;
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.600);
     font-size: 40px;
     text-align: center;
     color: rgb(255, 115, 0);
 }
 .purple2{
     padding-top: 50px;
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.600);
     font-size: 40px;
     text-align: center;
     color: rgb(218, 47, 218);
+}
+@media (max-width: 900px) {
+    .memory-game{
+        width: 400px;
+        height: 400px;
+    }
+    .memory-card{
+        width: calc(33.333% - 10px);
+        height: calc(25% - 10px);
+    }
+    .yellow2{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .purple2{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .orange2{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .blue2{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .red2{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .green2{
+        font-size: 30px;
+        padding-top: 20px;
+    }
 }
