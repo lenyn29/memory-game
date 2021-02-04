@@ -4,6 +4,23 @@ let hasFlippedCard = false;
 let lookBoard = false;
 let firstCard, secondCard;
 
+function clear () {
+    cards.forEach( card => card.addEventListener('click', flipCard));
+    cards.forEach( card => card.classList.remove('flip'));
+    setTimeout(() => {
+        cards.forEach(card => {
+            let randomPos = Math.floor(Math.random() * 12);
+            card.style.order = randomPos;
+            resetBoard();
+        });
+    },1000);
+}
+
+
+document.getElementById("boton").onclick = function() {
+    clear();
+}
+
 function flipCard () {
     if (lookBoard) return;
     if (this === firstCard) return;
@@ -56,6 +73,3 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-
-function reset(){
-    }

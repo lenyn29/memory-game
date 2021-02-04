@@ -17,11 +17,25 @@ body{
     align-items: center;
 }
 .container h1{
-    width: 100%;
-    color: #fff;
+    width: 640px;
+    color: rgb(243, 233, 233);
     font-size: 30px;
     text-align: center;
-    margin: 50px;
+    margin: 10px;
+    padding: 20px;
+}
+#boton{
+    width: 640px;
+    border-radius: 5px;
+    height: 100px;
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(233, 232, 199);
+    background: #f30808;
+    font-weight: 900;
+}
+#boton:hover{
+    background: #f3080886;
 }
 .memory-game{
     background: #000;
@@ -61,8 +75,14 @@ body{
     transform: rotateY(180deg);
 }
 .face-front{
-
     background: linear-gradient(#333 10%, #777 105%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face-front img {
+    width: 120px;
+    height: 120px;
 }
 .red{
     background: red;
@@ -87,47 +107,47 @@ body{
     background: rgba(255, 255, 255, 0.600);
     font-size: 50px;
     text-align: center;
-    color: red;
+    color: #fff;
 }
 .yellow2{
     padding-top: 50px;
     background: rgba(255, 255, 255, 0.600);
     font-size: 40px;
     text-align: center;
-    color: yellow;
+    color: #fff;
 }
 .green2{
     padding-top: 50px;
     background: rgba(255, 255, 255, 0.600);
     font-size: 50px;
     text-align: center;
-    color: rgb(30, 190, 30);
+    color: #fff;
 }
 .blue2{
     padding-top: 50px;
     background: rgba(255, 255, 255, 0.600);
     font-size: 50px;
     text-align: center;
-    color: blue;
+    color: #fff;
 }
 .orange2{
     padding-top: 50px;
     background: rgba(255, 255, 255, 0.600);
     font-size: 40px;
     text-align: center;
-    color: rgb(255, 115, 0);
+    color: #fff;
 }
 .purple2{
     padding-top: 50px;
     background: rgba(255, 255, 255, 0.600);
     font-size: 40px;
     text-align: center;
-    color: rgb(218, 47, 218);
+    color: #fff;
 }
 @media (max-width: 900px) {
     .memory-game{
         width: 400px;
-        height: 400px;
+        height: 600px;
     }
     .memory-card{
         width: calc(33.333% - 10px);
@@ -135,26 +155,26 @@ body{
     }
     .yellow2{
         font-size: 25px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
     .purple2{
         font-size: 25px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
     .orange2{
         font-size: 25px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
     .blue2{
         font-size: 30px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
     .red2{
         font-size: 30px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
     .green2{
         font-size: 30px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 }
